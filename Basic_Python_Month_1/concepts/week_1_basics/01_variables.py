@@ -35,7 +35,7 @@ print(5 > 3)     # Boolean result
 print("---")
 print(bool(True))    # True         
 print(bool(False))   # False
-print(bool(""))      # False # Except Empty, False and 0 data bool of every other data is True.
+print(bool(""))      # False # Except Empty string, False and 0, bool of every other data is True.
 print(bool(" "))     # True  # In this bool function as got input a space character so it is True.
 print(bool("Hi"))    # True
 print(bool(0))       # False
@@ -56,7 +56,7 @@ print(x, type(x))
 
 x = ""  # Empty string
 print(x, type(x))
-print(f"{x}{type(x)}") # Empty string never retruns anything.
+print(f"(x){type(x)}") # Empty string never retruns anything.
 
 
 age = "25"
@@ -65,18 +65,67 @@ print(age,"    ",type(age))
 
 print(int(1.7))   # Gives value 1 which if floor value of 1.7 or python just eliminates decimal part of the value. Type Conversion: Python knows how to "truncate" (cut off) the decimal part of a float to make it an integer.
 print(int("10"))      # OK gives 10
-print(int("10.5"))    # ERROR --> Syntactic Strictness: A string with a . is not a valid integer literal. Python refuses to "guess" if you want to round or truncate.
-print(int("abc"))     # ERROR
+# print(int("10.5"))    # ERROR --> Syntactic Strictness: A string with a . is not a valid integer literal. Python refuses to "guess" if you want to round or truncate.
+# print(int("abc"))     # ERROR
 
 
-print(age2) # Error -> NameError
+# print(age2) # Error -> NameError
 
 name = "John"
-print(Name)  # ERROR --> Variable name is case sensitive
+# print(Name)  # ERROR --> Variable name is case sensitive
+
+# ===========================================================
+
+# Task 1
+# Create 4 variables:
+# Your name
+# Your age
+# Your height
+# Whether you are a CS student
+# Print them with type().
 
 
+name = "Ashwath"
+age = 17
+height = 5.6
+is_student = True
+
+print("Name is:", name, "and Type is:",type(name))
+print("Age is:", age, "and Type is:",type(age))
+print("Height is:", height, "and Type is:",type(height))
+print("Is he a student?:", is_student, "and Type is:",type(is_student))
+
+# Task 2
+# Convert
+# "50" → int
+# "20.5" → float
+# 100 → string
+# 0 → boolean
+
+a = "50"
+a = int(a)
+print("Type of",a,"is:",type(a))
+
+a = "20.5"
+a = float(a)
+print("Type of:",a,"is:",type(a))
+
+a = 100
+a = str(a)
+print("Type of:",a,"is:",type(a))
+
+a = 0
+a = bool(a)
+print("Type of:",a,"is:",type(a))
 
 
+# Task 3 (Edge Case Thinking)
+# What happens?
+a = 5
+b = "5"
+print(a == b) # Result is False
 
+# Task 4
+print(bool("False")) # Result is: True. Except Empty string, False and 0, bool of every other data is True.
 
 
