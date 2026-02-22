@@ -129,3 +129,6 @@ print(a == b) # Result is False
 print(bool("False")) # Result is: True. Except Empty string, False and 0, bool of every other data is True.
 
 
+# Just trying merge conflict scenario case with main branch
+print("Concept-learning version")
+print("Hello")
